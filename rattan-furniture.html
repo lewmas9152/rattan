@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rattan Furniture — Home of Rattan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#categories" onclick="closeMobileMenu()">Collections</a>
+  <a href="#featured" onclick="closeMobileMenu()">Products</a>
+  <a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="logo">Rattan <span>Furniture</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#categories">Collections</a></li>
+    <li><a href="#featured">Products</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+  <button class="hamburger" onclick="openMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Home of Rattan Furniture · Kenya</div>
+      <h1>Crafted for <em>Outdoor</em> Living</h1>
+      <p class="hero-desc">Premium rattan and wicker furniture that transforms your outdoor space into a sanctuary of style and comfort. Handcrafted with timeless elegance.</p>
+      <div class="hero-actions">
+        <a href="#categories" class="btn-primary">Explore Collections</a>
+        <a href="#featured" class="btn-ghost">View All Products →</a>
+      </div>
+    </div>
+    <div class="hero-images">
+      <img src="images/img1.jpeg" 
+           onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22750%22%3E%3Crect width=%22600%22 height=%22750%22 fill=%22%232c1a08%22/%3E%3Ctext x=%22300%22 y=%22375%22 text-anchor=%22middle%22 fill=%22%23C9963A%22 font-size=%2224%22%3ERattan Furniture%3C/text%3E%3C/svg%3E'"
+           class="hero-img-main" alt="Featured rattan sofa set">
+      <img src="images/img2.jpeg"
+           onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect width=%22300%22 height=%22300%22 fill=%22%231a1208%22/%3E%3C/svg%3E'"
+           class="hero-img-float" alt="Rattan chair set">
+      <div class="hero-stats">
+        <span class="num">500+</span>
+        <span class="label">Happy Clients</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item"><span class="marquee-dot"></span>Outdoor Sofa Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Dining Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Egg Swing Chairs</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Sun Loungers</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Corner Sofas</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Bistro Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Garden Beds</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Rattan Planters</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Outdoor Sofa Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Dining Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Egg Swing Chairs</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Sun Loungers</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Corner Sofas</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Bistro Sets</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Garden Beds</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Rattan Planters</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text fade-up">
+      <div class="section-label">Our Story</div>
+      <h2>The Finest <em>Rattan</em> in Kenya</h2>
+      <p>We are Edge Natural — Kenya's premier destination for handcrafted rattan and synthetic wicker furniture. Our pieces are built to endure the elements while elevating every outdoor space with natural elegance.</p>
+      <p>From intimate balconies to grand hotel terraces, our furniture tells a story of craft, quality, and thoughtful design. Every weave, every curve, every cushion is chosen with intention.</p>
+      <div class="about-features">
+        <div class="feature-item">
+          <h4>Weather-Resistant</h4>
+          <p>UV-stable synthetic rattan built for Kenya's climate</p>
+        </div>
+        <div class="feature-item">
+          <h4>Custom Cushions</h4>
+          <p>Choice of colors and fabrics to match your vision</p>
+        </div>
+        <div class="feature-item">
+          <h4>Nationwide Delivery</h4>
+          <p>Delivered and assembled across Kenya</p>
+        </div>
+        <div class="feature-item">
+          <h4>Bespoke Orders</h4>
+          <p>Custom sizes and configurations available</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-images fade-up" style="transition-delay:0.2s">
+      <img class="about-img tall" 
+           src="images/img3.jpeg"
+           alt="Showroom">
+      <img class="about-img short"
+           src="images/img4.jpeg"
+           alt="Craftsmanship">
+      <img class="about-img short"
+           src="images/img5.jpeg"
+           alt="Materials">
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<div id="categories">
+  <div class="inner">
+    <div class="cat-header fade-up">
+      <div>
+        <div class="section-label">Collections</div>
+        <h2>Shop by <em>Category</em></h2>
+      </div>
+      <a href="#featured" class="btn-ghost" style="color:var(--tan)">View All →</a>
+    </div>
+    <div class="cat-grid">
+
+      <!-- Large card: Lounge Sets -->
+      <div class="cat-card large fade-up" onclick="filterProducts('lounge')">
+        <div class="cat-arrow">→</div>
+        <img class="cat-img large-img" 
+             src="images/img6.jpeg"
+             alt="Outdoor Lounge Sets">
+        <div class="cat-overlay">
+          <span class="cat-tag">Most Popular</span>
+          <div class="cat-name">Outdoor Lounge Sets</div>
+          <div class="cat-count">12 products · Sofas, Sectionals & More</div>
+        </div>
+      </div>
+
+      <!-- Dining -->
+      <div class="cat-card fade-up" style="transition-delay:0.1s" onclick="filterProducts('dining')">
+        <div class="cat-arrow">→</div>
+        <img class="cat-img std-img"
+             src="images/img7.jpeg"
+             alt="Dining Sets">
+        <div class="cat-overlay">
+          <span class="cat-tag">New In</span>
+          <div class="cat-name">Dining Sets</div>
+          <div class="cat-count">8 products</div>
+        </div>
+      </div>
+
+      <!-- Swing Chairs -->
+      <div class="cat-card fade-up" style="transition-delay:0.15s" onclick="filterProducts('swing')">
+        <div class="cat-arrow">→</div>
+        <img class="cat-img std-img"
+             src="images/img8.jpeg"
+             alt="Egg Swing Chairs">
+        <div class="cat-overlay">
+          <span class="cat-tag">Best Seller</span>
+          <div class="cat-name">Egg Swing Chairs</div>
+          <div class="cat-count">6 products</div>
+        </div>
+      </div>
+
+      <!-- Sun Loungers -->
+      <div class="cat-card fade-up" style="transition-delay:0.2s" onclick="filterProducts('lounger')">
+        <div class="cat-arrow">→</div>
+        <img class="cat-img std-img"
+             src="images/img9.jpeg"
+             alt="Sun Loungers">
+        <div class="cat-overlay">
+          <div class="cat-name">Sun Loungers</div>
+          <div class="cat-count">5 products</div>
+        </div>
+      </div>
+
+      <!-- Bistro -->
+      <div class="cat-card fade-up" style="transition-delay:0.25s" onclick="filterProducts('bistro')">
+        <div class="cat-arrow">→</div>
+        <img class="cat-img std-img"
+             src="images/img10.jpeg"
+             alt="Bistro Sets">
+        <div class="cat-overlay">
+          <div class="cat-name">Bistro & Café Sets</div>
+          <div class="cat-count">7 products</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div id="featured">
+  <div class="inner">
+    <div class="featured-header fade-up">
+      <div>
+        <div class="section-label">Our Range</div>
+        <h2>Featured <em>Products</em></h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="setTab(this,'all')">All</button>
+        <button class="filter-tab" onclick="setTab(this,'lounge')">Lounge</button>
+        <button class="filter-tab" onclick="setTab(this,'dining')">Dining</button>
+        <button class="filter-tab" onclick="setTab(this,'swing')">Swing</button>
+        <button class="filter-tab" onclick="setTab(this,'lounger')">Loungers</button>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Products will be rendered by JS -->
+
+    </div>
+  </div>
+</div>
+
+<!-- SPOTLIGHT -->
+<div id="spotlight">
+  <div class="spotlight-grid">
+    <div class="spotlight-img">
+      <img src="images/img1.jpeg"
+           alt="Circular sofa" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <div class="spotlight-content">
+      <div class="section-label">Signature Piece</div>
+      <h2>The Circular <em>Sofa</em></h2>
+      <p>Our most iconic creation — a fully circular sectional sofa that seats up to 12 guests. The perfect centerpiece for hotel lobbies, luxury villas, or statement gardens.</p>
+      <p>Available in dark espresso or natural rattan weave, with cushion colors fully customizable to your palette.</p>
+      <div class="price-display">
+        <span class="price-from">From</span>
+        <span class="price-amount">KSh 280,000</span>
+        <span class="price-curr">· incl. cushions</span>
+      </div>
+      <a href="#contact" class="btn-primary" style="align-self:flex-start">Enquire Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery">
+  <div class="inner">
+    <div class="fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:0.5rem">
+      <div>
+        <div class="section-label">Inspiration</div>
+        <h2>Gallery <em>&</em> Looks</h2>
+      </div>
+    </div>
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" onclick="setGalleryTab(this,'all')">All Pieces</button>
+      <button class="gallery-tab" onclick="setGalleryTab(this,'lounge')">Lounge</button>
+      <button class="gallery-tab" onclick="setGalleryTab(this,'dining')">Dining</button>
+      <button class="gallery-tab" onclick="setGalleryTab(this,'swing')">Swing Chairs</button>
+      <button class="gallery-tab" onclick="setGalleryTab(this,'lounger')">Loungers</button>
+    </div>
+    <div class="masonry" id="galleryGrid"></div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div id="process">
+  <div class="inner">
+    <div class="fade-up" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-label" style="justify-content:center">How It Works</div>
+      <h2>From Vision to <em>Reality</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">🎨</div>
+        <h3>Consultation</h3>
+        <p>Share your space, style, and budget with our design team. We'll guide you to the perfect configuration.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">📐</div>
+        <h3>Custom Design</h3>
+        <p>Choose your frame color, cushion fabric, and layout. We accommodate custom sizes and bespoke configurations.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">🔨</div>
+        <h3>Crafting</h3>
+        <p>Our artisans weave each piece with precision using UV-stable, weather-resistant rattan and powder-coated steel frames.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-icon">🚚</div>
+        <h3>Delivery & Setup</h3>
+        <p>We deliver and assemble your furniture anywhere in Kenya. Your space will be ready to enjoy immediately.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div id="testimonials">
+  <div class="inner">
+    <div class="fade-up">
+      <div class="section-label">Reviews</div>
+      <h2>What Clients <em>Say</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <span class="quote-mark">"</span>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The quality is outstanding. Our poolside area looks like something from a luxury resort magazine. The team was professional and assembled everything perfectly."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">MN</div>
+          <div>
+            <div class="author-name">Margaret N.</div>
+            <div class="author-loc">Karen, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <span class="quote-mark">"</span>
+        <div class="stars">★★★★★</div>
+        <blockquote>"We furnished our hotel terrace with six dining sets. Two years later they still look brand new. The UV resistance is incredible — no fading whatsoever."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">DK</div>
+          <div>
+            <div class="author-name">David K.</div>
+            <div class="author-loc">Westlands, Nairobi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <span class="quote-mark">"</span>
+        <div class="stars">★★★★★</div>
+        <blockquote>"The egg swing chairs are a showstopper. Every visitor to our home asks where we got them. Couldn't be happier with the purchase and the service."</blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">AW</div>
+          <div>
+            <div class="author-name">Amina W.</div> 
+            <div class="author-loc">Lavington, Nairobi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div id="cta">
+  <p class="fade-up" style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(26,18,8,0.5);margin-bottom:0.5rem">Ready to Transform Your Space?</p>
+  <h2 class="fade-up" style="font-family:'Playfair Display',serif">Let's Build Your <br>Dream Outdoor Space</h2>
+  <p class="fade-up">Contact us today for a free consultation. We serve Nairobi and deliver across Kenya.</p>
+  <div class="cta-actions fade-up">
+    <a href="tel:+254745830307" class="btn-dark">📞 +254 745 830 307</a>
+    <a href="https://wa.me/254745830307" class="btn-outline-dark">WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width:1400px;margin:0 auto;padding:6rem 3rem">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+    <div class="fade-up">
+      <div class="section-label">Get In Touch</div>
+      <h2>Visit Our <em>Showroom</em></h2>
+      <p style="color:var(--text-muted);line-height:1.9;margin-bottom:1.5rem">Come see our full range in person. Our team will help you find the perfect furniture for your space and budget.</p>
+      <div style="display:flex;flex-direction:column;gap:1rem">
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <span style="color:var(--gold);font-size:1.2rem">📍</span>
+          <div>
+            <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.2rem">Showroom</div>
+            <div style="color:var(--cream)">Edge Natural Furniture, Nairobi, Kenya</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <span style="color:var(--gold);font-size:1.2rem">📱</span>
+          <div>
+            <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.2rem">Phone / WhatsApp</div>
+            <a href="tel:+254745830307" style="color:var(--cream);text-decoration:none">+254 745 830 307</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <span style="color:var(--gold);font-size:1.2rem">📷</span>
+          <div>
+            <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.2rem">TikTok / Social</div>
+            <a href="https://tiktok.com/@edge.natural.furn" style="color:var(--tan);text-decoration:none">@edge.natural.furn</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start">
+          <span style="color:var(--gold);font-size:1.2rem">🕐</span>
+          <div>
+            <div style="font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.2rem">Hours</div>
+            <div style="color:var(--cream)">Mon–Sat: 8am – 6pm · Sun: 10am – 4pm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade-up" style="transition-delay:0.2s">
+      <form id="contactForm" style="display:flex;flex-direction:column;gap:1rem" onsubmit="handleForm(event)">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div>
+            <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.4rem">Name</label>
+            <input type="text" placeholder="Your name" required style="width:100%;background:rgba(201,150,58,0.05);border:1px solid rgba(201,150,58,0.2);color:var(--cream);padding:0.7rem 1rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s" 
+                   onfocus="this.style.borderColor='rgba(201,150,58,0.6)'" onblur="this.style.borderColor='rgba(201,150,58,0.2)'">
+          </div>
+          <div>
+            <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.4rem">Phone</label>
+            <input type="tel" placeholder="+254..." style="width:100%;background:rgba(201,150,58,0.05);border:1px solid rgba(201,150,58,0.2);color:var(--cream);padding:0.7rem 1rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s"
+                   onfocus="this.style.borderColor='rgba(201,150,58,0.6)'" onblur="this.style.borderColor='rgba(201,150,58,0.2)'">
+          </div>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.4rem">Interest</label>
+          <select style="width:100%;background:rgba(201,150,58,0.05);border:1px solid rgba(201,150,58,0.2);color:var(--cream);padding:0.7rem 1rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;-webkit-appearance:none"
+                  onfocus="this.style.borderColor='rgba(201,150,58,0.6)'" onblur="this.style.borderColor='rgba(201,150,58,0.2)'">
+            <option value="" style="background:#1a1208">Select a category</option>
+            <option value="lounge" style="background:#1a1208">Outdoor Lounge Sets</option>
+            <option value="dining" style="background:#1a1208">Dining Sets</option>
+            <option value="swing" style="background:#1a1208">Egg Swing Chairs</option>
+            <option value="lounger" style="background:#1a1208">Sun Loungers</option>
+            <option value="bistro" style="background:#1a1208">Bistro Sets</option>
+            <option value="other" style="background:#1a1208">Other / Custom</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.4rem">Message</label>
+          <textarea placeholder="Tell us about your space and requirements..." rows="4" style="width:100%;background:rgba(201,150,58,0.05);border:1px solid rgba(201,150,58,0.2);color:var(--cream);padding:0.7rem 1rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;resize:vertical;transition:border-color 0.2s"
+                    onfocus="this.style.borderColor='rgba(201,150,58,0.6)'" onblur="this.style.borderColor='rgba(201,150,58,0.2)'"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Enquiry →</button>
+        <div id="formMsg" style="display:none;color:var(--gold);font-size:0.85rem;text-align:center">✓ Thank you! We'll be in touch within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo" style="display:inline-block;margin-bottom:1rem">Rattan <span>Furniture</span></a>
+      <p>Kenya's home of premium outdoor rattan and synthetic wicker furniture. Crafted for style, built to last.</p>
+      <div class="footer-socials">
+        <a href="https://tiktok.com/@edge.natural.furn" class="social-link" title="TikTok">TK</a>
+        <a href="https://wa.me/254745830307" class="social-link" title="WhatsApp">WA</a>
+        <a href="#" class="social-link" title="Instagram">IG</a>
+        <a href="#" class="social-link" title="Facebook">FB</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="#">Outdoor Lounge Sets</a></li>
+        <li><a href="#">Dining Sets</a></li>
+        <li><a href="#">Egg Swing Chairs</a></li>
+        <li><a href="#">Sun Loungers</a></li>
+        <li><a href="#">Bistro Sets</a></li>
+        <li><a href="#">Rattan Beds</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Delivery Policy</a></li>
+        <li><a href="#">Warranty</a></li>
+        <li><a href="#">Care Guide</a></li>
+        <li><a href="#">Custom Orders</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+254745830307">+254 745 830 307</a></li>
+        <li><a href="https://wa.me/254745830307">WhatsApp</a></li>
+        <li><a href="https://tiktok.com/@edge.natural.furn">@edge.natural.furn</a></li>
+        <li><a href="#">Nairobi, Kenya</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Rattan Furniture · Edge Natural. All rights reserved.</p>
+    <p>Designed with ♥ in Nairobi · <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/data.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
